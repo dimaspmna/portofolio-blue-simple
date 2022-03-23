@@ -1,0 +1,68 @@
+:root{
+    --clr-dark: rgb(31 41 55);
+    --clr-grey: rgb(107 114 128);
+}
+body{
+    font-family: 'Poppins',sans-serif,!important;
+}
+.navbar-brand{
+    font-family: 'Nunito', sans-serif;
+    color: var(--clr-dark);
+}
+
+.nav-link{
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: white;
+}
+
+.main-header{
+    font-size: 2.5rem;
+    color: var(--clr-dark);
+    font-family: 'Poppins',sans-serif;
+}
+
+.text-content{
+    color: var(--clr-grey);
+    letter-spacing: 0.025rem;
+    font-size: 0.875rem;
+}
+
+@media (min-width:576px){
+    .main-header{
+        font-size: 4rem;
+    }
+
+}
+
+.my-photo{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.section-header{
+    font-weight: bold;
+    color: var(--clr-dark);
+}
+.card{
+    border: none;
+    box-shadow: 0 1rem rgba(0, 60, 255, 0);
+}
+.navbar{
+    position: fixed;
+}
+
+/* jadi ketika ukuran layar lebih dari 600px maka terapkan media */
+@media (max-width: 600px){
+    img.my-photo{
+        height: 300px;
+    }
+    .navbar{
+        position: fixed;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    
+}
